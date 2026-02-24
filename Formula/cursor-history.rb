@@ -1,8 +1,8 @@
 class CursorHistory < Formula
   desc "Browse, search, and resume Cursor Agent CLI sessions"
   homepage "https://github.com/nick-fullpath/cursor-history"
-  url "https://github.com/nick-fullpath/cursor-history/archive/refs/tags/v0.3.0.tar.gz"
-  sha256 "b070d42dd1d8aed6a535ad4a47a7961a8747acbdca2987568718641c0ee6b054"
+  url "https://github.com/nick-fullpath/cursor-history/archive/refs/tags/v0.4.0.tar.gz"
+  sha256 "65f11ff82b54bb670e3841d448353996d477f1414983e500145746fdfc87bb01"
   license "MIT"
 
   depends_on "jq"
@@ -11,7 +11,7 @@ class CursorHistory < Formula
 
   def install
     bin.install "cursor-history"
-    (lib/"cursor-history").install "lib/indexer.py"
+    (lib/"cursor-history").install Dir["lib/*.py"]
   end
 
   def caveats
