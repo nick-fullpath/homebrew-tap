@@ -1,8 +1,8 @@
 class CursorHistory < Formula
   desc "Browse, search, and resume Cursor Agent CLI sessions"
   homepage "https://github.com/nick-fullpath/cursor-history"
-  url "https://github.com/nick-fullpath/cursor-history/archive/refs/tags/v0.4.1.tar.gz"
-  sha256 "22047d6786783f811c01bc69be776866c8bb5bb390ce5815e58e13e7ce16247c"
+  url "https://github.com/nick-fullpath/cursor-history/archive/refs/tags/v0.4.2.tar.gz"
+  sha256 "fe1d323f530d421def4fd469d1946b8ceaf7706abb1f463455ef7e1e860c857a"
   license "MIT"
 
   depends_on "jq"
